@@ -20,6 +20,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="71W-YL-H0k">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="iHi-DL-98B">
+                                <rect key="frame" x="157.5" y="55" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PsO-1T-hfJ"/>
+                                    <constraint firstAttribute="width" constant="60" id="Zze-1X-nQw"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Hourly Wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zi6-wM-3rC" customClass="CurrencyTxtField" customModule="windowShopper" customModuleProvider="target">
+                                <rect key="frame" x="54" y="162" width="266" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -27,6 +41,8 @@
                             <constraint firstItem="71W-YL-H0k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HoT-0D-qbN"/>
                             <constraint firstItem="71W-YL-H0k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JPq-4X-Vho"/>
                             <constraint firstItem="71W-YL-H0k" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KR3-so-vH0"/>
+                            <constraint firstItem="iHi-DL-98B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="mUg-WY-HVk"/>
+                            <constraint firstItem="iHi-DL-98B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wDK-j2-SJk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,5 +54,6 @@
     </scenes>
     <resources>
         <image name="windowShopperBG" width="414" height="736"/>
+        <image name="windowShopperIcon" width="115" height="115"/>
     </resources>
 </document>
