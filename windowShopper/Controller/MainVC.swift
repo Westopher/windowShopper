@@ -10,9 +10,14 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    
+    @IBOutlet weak var wageTxt: CurrencyTxtField!
+    
+    @IBOutlet weak var priceTxt: CurrencyTxtField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
 
