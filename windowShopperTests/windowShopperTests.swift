@@ -23,8 +23,10 @@ class windowShopperTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    //Don't use functions that rely on other functions
     func testGetHours() {
-    XCTAssert(Wage.getHours(forWage: 25, andPrice: 100) == 4)
+        XCTAssert(Wage.getHours(forWage: 25, andPrice: 100) == 4)
+        XCTAssert(Wage.getHours(forWage: 15.50, andPrice: 250.53) == 17)
     }
     
     func testPerformanceExample() {
