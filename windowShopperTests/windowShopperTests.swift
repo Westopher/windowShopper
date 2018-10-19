@@ -22,6 +22,8 @@ class windowShopperTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    XCTAssert(Wage)
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
